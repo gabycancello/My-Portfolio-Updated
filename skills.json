@@ -4,8 +4,8 @@
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
     {
-        "name": "ExpressJS",
-        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+        "name": "Powerpoint",
+        "icon": "https://img.icons8.com/?size=48&id=81726&format=png"
     },
     {
         "name": "NodeJS",
@@ -20,8 +20,8 @@
         "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
     },
     {
-        "name": "Sass",
-        "icon": "https://img.icons8.com/color/48/000000/sass.png"
+        "name": "Unity",
+        "icon": "https://img.icons8.com/?size=48&id=IPzemd2v4Ubj&format=png"
     },
     {
         "name": "HTML5",
@@ -36,8 +36,8 @@
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+        "name": "Csharp",
+        "icon": "https://img.icons8.com/?size=48&id=mhwmyz1eu7T5&format=png"
     },
     {
         "name": "Git VCS",
@@ -48,7 +48,36 @@
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
-        "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
+        "name": "Excel",
+        "icon": "https://img.icons8.com/?size=48&id=117561&format=png"
     }    
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/?size=48&id=EZQdGLNeo7JI&format=png"
+    }
+    {
+        "name": "Photoshop",
+        "icon": "https://img.icons8.com/?size=48&id=13677&format=png"
+    }
+    {
+        "name": "Lightroom",
+        "icon": "https://img.icons8.com/?size=48&id=x2Oc1Ou9EhlC&format=png"
+    }
+     {
+        "name": "Trello",
+        "icon": "https://img.icons8.com/?size=50&id=38573&format=png"
+    }
+    {
+        "name": "Asana",
+        "icon": "https://img.icons8.com/?size=50&id=ookJ5efQKjnm&format=png"
+    }
+    {
+        "name": "Sway",
+        "icon": "https://img.icons8.com/?size=48&id=39836&format=png"
+    }
+     {
+        "name": "One Note",
+        "icon": "https://img.icons8.com/?size=48&id=13653&format=png"
+    }
+    
 ]
