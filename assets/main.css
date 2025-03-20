@@ -1,22 +1,3 @@
-/* 
- * Created on : 11-May-2017, 8:41:30 PM
- * Author     : Akash Rai Chhabria
- */
-
-/* 
- * This code is free to use with proper credit given
- * if this code is being used to make profit then please
- * be sure to buy the required FancyBox license
- */
-
-/*
- * Affects the entire body
- * Makes sure there is no horiszontal overflow
- * Makes sure the bankground is black
- * Sets the font family
- * sets the margin adn padding as zero
- * text colour = white
- */
 
 body
 {
@@ -27,15 +8,6 @@ body
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* Affects the side navigation
- * Makes sure the position is fixed
- * Makes sure its height extends to a 100% of the page
- * sets the margins and alginment as 0
- * sets the width to 15.625% of the page
- * sets the z-index to make sure the nav bar is ahead on the page and the content is behind
- * aligns the text to the left and displays its contents vertically
- * allows smooth transition of the nav menu when the nav button is clicked
- */
 
 nav
 {
@@ -54,9 +26,7 @@ nav
     
 }
 
-/* Affects the the contents of the side navigation
- * algins and sets the margin to 10px
- */
+
 
 nav ul
 {
@@ -66,12 +36,6 @@ nav ul
    text-align:left;
 }
 
-/* Affects every link in the menu bar
- * Creates space between each link
- * removes its link properties by chaning colour and removing text decoration
- * increases font size
- * allows for a smooth transition of each link when the button is clicked
- */
 
 
 nav ul li a
@@ -86,18 +50,14 @@ nav ul li a
     text-align:left;
 }
 
-/* Affects every link in the menu bar when the mouse hovers over it
- * changes the colour to grey
- */
+
 
 nav ul li a:hover, .offcanvas a:focus
 {
     color: #666;
 }
 
-/* Affects the link property of the heading of the nav bar
- * removes its link properties by chaning colour and removing text decoration
- */
+
 
 h1 a
 {
@@ -105,10 +65,7 @@ h1 a
     color: #fff;
 }
 
-/* Affects heading of the nav bar
- * creates a larger amount of space between the title and the rest of its content
- * alligns the text to the center of the nav bar
- */
+
 
 h1
 {
@@ -116,9 +73,7 @@ h1
     text-align: center;  
 }
 
-/* Affects the info class and its content (in this case, the about/content text)
- * brings the text the bottom and aligns in accordance to the side nav
- */
+
 
 .info h5 
 {
@@ -128,10 +83,7 @@ h1
     margin-bottom: 4%;
 }
 
-/* Affects the info class and its content (in this case, the about/content link)
- * removes its link properties by changin colour and removing decoration
- * creates transition effect for side nav button
- */
+
 
 .info h5 a
 {
@@ -140,52 +92,34 @@ h1
     transition: 0.3s;
 }
 
-/* Affects the info class and its content (in this case, the about/content text) only on hover
- * changes the text from white to grey
- */
+
 
 .info h5 a:hover, .offcanvas a:focus
 {
     color: #666;
 }
 
-/* Affects all the social media buttons
- * Creates space from the left of the page in the nav bar
- */
+
 
 .socialbtn ul
 {
-    padding-left: 21%;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
-/* Affects each social media button
- * displays it as inline-block and changes the colour to white
- */
-
-.socialbtn ul li
-{
-    display: inline-block;
-    color: #fff;
-}
-
-/* Affects the images on the page
- * creates space between each image
- * displays only a certain percentage of the images actual dimensions in order to attain a thumbnail effect
- */
 
 img
 {
     padding: 0.5% 0.5% 0.5% 0.5%;
     width: 23.63%;
     height: 19.53%;
-    display: inline-block;
-    margin: auto;
+    display: flex;
     transition: transform .2s ease-in-out;
 }
 
-/* Affects the content of the page 
- * creates sace between the content and the side nav and header
- */
+
 
 .content
 {
@@ -193,18 +127,14 @@ img
     padding-top: 4%;
 }
 
-/* Affects the image when the mouse pointer is hovering over the image
- * increases the image size by 0.05 and creates a cool effect
- */
+
 
 a:hover img 
 {
   transform: scale(1.05);
 }
 
-/* 
- * changes the layout of the page if the max-width is 50 em
- */
+
 
 @media screen and (max-width: 50em)
 {
@@ -282,7 +212,6 @@ a:hover img
     #main 
     {
         transition: margin-left .5s;
-        /* padding: 20px; */
     }
     
     /*
