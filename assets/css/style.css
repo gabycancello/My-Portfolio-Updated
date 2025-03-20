@@ -34,7 +34,7 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: rgb(57, 255, 20, 0.8);
 }
 html::-webkit-scrollbar-thumb {
   background: #04c90b;
@@ -251,7 +251,7 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #1bd133;
+  background: #1aad2d;
   box-shadow: 0px 5px 18px rgba(57, 255, 20, 0.6);
   font-family: "Nunito", sans-serif;
 }
@@ -290,7 +290,7 @@ header .navbar ul li a:hover {
   display: inline-block;
   line-height: 44px;
   color: #37d46e;
-  background-color: #09011b;
+  background-color: #021a06;
   width: 44px;
   height: 44px;
   text-align: center;
@@ -379,7 +379,7 @@ header .navbar ul li a:hover {
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #020133;
+  color: #033607;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -401,7 +401,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #29e004;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -818,9 +818,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #04e00c;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #5dfc4e;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -833,7 +833,7 @@ header .navbar ul li a:hover {
   left: 30px;
   border: medium solid #f68c09;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #12e307 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
@@ -872,7 +872,7 @@ header .navbar ul li a:hover {
   transition: 0.5s;
   color: #fff;
   background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  box-shadow: 0px 5px 10px rgba(57, 255, 20, 1);
   text-align: center;
 }
 .morebtn .btn span {
@@ -886,7 +886,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .morebtn .btn:hover {
-  background: #1a047e;
+  background: #097a14;
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
@@ -913,9 +913,9 @@ header .navbar ul li a:hover {
   }
   .experience .container::before {
     left: 61px;
-    border: medium solid #f68c09;
+    border: medium solid #51f748;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #f68c09 transparent transparent;
+    border-color: transparent #14e309 transparent transparent;
   }
   .experience .left::after {
     left: 15px;
@@ -996,7 +996,7 @@ form .message textarea {
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
   border: 1px solid rgb(51, 51, 51);
-  background: #e5ecfb;
+  background: #a3f7ac;
 }
 .field input::placeholder,
 .message textarea::placeholder {
@@ -1044,13 +1044,13 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #2506ad;
+  background: #0cad12;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
 }
 .button-area button:hover {
-  background: #421cecf5;
+  background: #37d46e;
 }
 .button-area span {
   font-size: 17px;
