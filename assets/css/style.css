@@ -84,13 +84,13 @@ section {
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: rgb(0, 128, 0);
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #0c300f;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -224,12 +224,12 @@ header .navbar ul li a:hover {
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #03570d;
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #3ff731;
+  color: #17a60c;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -251,7 +251,7 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #011aff;
+  background: #1bd133;
   box-shadow: 0px 5px 18px rgba(57, 255, 20, 0.6);
   font-family: "Nunito", sans-serif;
 }
@@ -691,7 +691,7 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: #17e009;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -725,7 +725,7 @@ header .navbar ul li a:hover {
   margin-right: 2rem;
 }
 .work .desc .btns .btn:hover {
-  background: #310ae0f5;
+  background: #033609;
 }
 .work .viewall {
   display: flex;
@@ -772,7 +772,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: #02300a;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -793,14 +793,14 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid #5eed51;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
   font-size: 1.89rem;
   text-align: center;
   font-weight: 600;
-  color: #02094b;
+  color: #033b03;
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
