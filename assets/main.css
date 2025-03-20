@@ -173,6 +173,10 @@ a:hover img
     {
         padding-left: 55%;
     }
+
+    .nav-toggle .socialbtn ul {
+    justify-content: center;
+}
    
     img
     {
