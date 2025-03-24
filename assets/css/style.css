@@ -467,10 +467,10 @@ header .navbar ul li a:hover {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: rgb(0, 230, 50);
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: rgba(0, 22, 0, 0.4);
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
@@ -493,8 +493,8 @@ header .navbar ul li a:hover {
   transition: 0.2s;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 8px 10px rgba(0, 100, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .skills .container .bar .info {
   display: flex;
@@ -534,7 +534,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: #99f598;
   min-height: 80vh;
 }
 .education .qoute {
@@ -588,7 +588,7 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: #012970;
+  color: #045c05;
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
@@ -642,7 +642,7 @@ header .navbar ul li a:hover {
 /* work section starts */
 .work {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to bottom, #012b03, #012103);
 }
 .work h2 {
   color: #fff;
@@ -688,7 +688,7 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: #03fc03;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -737,7 +737,7 @@ header .navbar ul li a:hover {
   color: rgb(255, 255, 255);
   font-weight: 700;
   border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  box-shadow: 0px 5px 10px rgba(0, 128, 55, 0.4);
   text-align: center;
 }
 .work .viewall .btn span {
@@ -769,7 +769,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: #022904;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -790,14 +790,14 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid: #5df558;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
   font-size: 1.89rem;
   text-align: center;
   font-weight: 600;
-  color: #02094b;
+  color: #054a04;
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
@@ -815,9 +815,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #15ed1d;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #05e614;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -828,15 +828,15 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #24e007;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #09e618 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #09e010;
   position: relative;
   border-radius: 6px;
 }
