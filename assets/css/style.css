@@ -289,7 +289,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
+  color: #02fa30;
   background-color: #09011b;
   width: 44px;
   height: 44px;
@@ -304,7 +304,7 @@ header .navbar ul li a:hover {
 .social-icons a:focus,
 .social-icons a:hover {
   color: #fff;
-  background-color: #0685da;
+  background-color: #0ad12f;
 }
 .social-icons a.github:hover {
   background-color: #0e0e0e;
@@ -382,7 +382,7 @@ header .navbar ul li a:hover {
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #020133;
+  color: #012405;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -404,7 +404,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #02f723;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -414,8 +414,8 @@ header .navbar ul li a:hover {
   border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: #069619;
+  box-shadow: 0px 5px 10px rgba(8, 200, 8, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .resumebtn .btn span {
@@ -429,7 +429,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #1a047e;
+  background: #036608;
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
@@ -461,7 +461,7 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #038a07, #04cf0e);
 }
 .skills h2 {
   color: #fff;
