@@ -12,16 +12,8 @@
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
     {
-        "name": "TailwindCSS",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/48px-Tailwind_CSS_Logo.png"
-    },
-    {
         "name": "Bootstrap",
         "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
-    },
-    {
-        "name": "Sass",
-        "icon": "https://img.icons8.com/color/48/000000/sass.png"
     },
     {
         "name": "HTML5",
@@ -36,10 +28,6 @@
         "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
     },
     {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
         "name": "Git VCS",
         "icon": "https://img.icons8.com/color/48/000000/git.png"
     },
@@ -48,7 +36,40 @@
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
-        "name": "WordPress",
-        "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+        "name": "CSharp",
+        "icon": "https://img.icons8.com/color/48/c-sharp-logo.png"
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/color/48/figma--v1.png"
+    },
+    {
+        "name": "Unity",
+        "icon": "https://img.icons8.com/?size=48&id=IPzemd2v4Ubj&format=png"
+    },
+    {
+        "name": "Excel",
+        "icon": "https://img.icons8.com/fluency/48/microsoft-excel-2019.png"
+    },
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/fluency/48/canva.png"
+    },
+    {
+        "name": "PowerPoint",
+        "icon": "https://img.icons8.com/color/48/ms-powerpoint.png"
+    },
+    {
+        "name": "Sway",
+        "icon": "https://img.icons8.com/fluency/48/microsoft-sway-2019.png"
+    },
+    {
+        "name": "Google Ads",
+        "icon": "https://img.icons8.com/color/48/google-ads.png"
+    },
+    {
+        "name": "Trello",
+        "icon": "https://img.icons8.com/color/48/trello.png"
+    }
+    
 ]

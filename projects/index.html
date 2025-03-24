@@ -8,7 +8,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id='favicon' rel="shortcut icon" href="/assets/images/me.png" type="image/x-png">
-    <title>Projects | Portfolio Gabriela Cancello</title>
+    <title>Projetos | Portfolio Gabriela Cancello</title>
 </head>
 <body oncontextmenu="return false">
 
@@ -20,12 +20,11 @@
         <nav class="navbar">
             <ul>
             <li><a href="/#home">Home</a></li>
-            <li><a href="/#about">About</a></li>
+            <li><a href="/#about">Sobre</a></li>
             <li><a href="/#skills">Skills</a></li>
-            <li><a href="/#education">Education</a></li>
-            <li><a class="active" href="/#work">Work</a></li>
-            <li><a href="/#experience">Experience</a></li>
-            <li><a href="/#contact">Contact</a></li>
+            <li><a href="/#education">Educação</a></li>
+            <li><a class="active" href="/#work">Trabalho</a></li>
+            <li><a href="/#experience">Experiências</a></li>
             </ul>
         </nav>
 </header>
@@ -34,48 +33,73 @@
 <!-- work project section starts -->
 <section class="work" id="work">
 
-  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> Projetos <span>Desenvolvidos</span></h2>
   
   <div id="filters" class="button-group">
-    <button class="btn is-checked" data-filter="*">All Projects</button>
+    <button class="btn is-checked" data-filter="*">Alguns Projetos</button>
     <button class="btn" data-filter=".mern">Natsave</button>
     <button class="btn" data-filter=".lamp">Gefran Industria</button>
-    <button class="btn" data-filter=".basicweb">Basic Web</button>
-    <button class="btn" data-filter=".android">Android App</button>
+    <button class="btn" data-filter=".basicweb">Portfolio</button>
+    <button class="btn" data-filter=".android">Mood Coffee</button>
   </div>
 
-  <div class="box-container">
+  <div class="box-container" id="projectsContainer">
+        <!-- Projetos serão carregados dinamicamente aqui -->
+    </div>
 
-    <!-- <div class="box tilt">
-      <img src="/assets/images/projects/agecalc.PNG" alt="" />
-      <div class="content">
-        <div class="tag">
-        <h3>Portfolio Website</h3>
-        </div>
-        <div class="desc">
-          <p>Personal portfolio website. Don't need much info about it, just scroll down. You're here only!</p>
-          <div class="btns">
-            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="#" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div> -->   
+    <div class="backbtn">
+        <a href="/#work" class="btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar para Home</span>
+        </a>
+    </div>
+</section>
 
-  </div>
+<script>
+    async function loadProjects() {
+        try {
+            const response = await fetch("projects.json");
+            const projects = await response.json();
+            const projectsContainer = document.getElementById("projectsContainer");
 
-  <div class="backbtn">
-    <a href="/#work" class="btn">
-        <i class="fas fa-arrow-left"></i>
-        <span>Back to Home</span>
-  </a>
-  </div>
+            projects.forEach(project => {
+                const projectElement = document.createElement("div");
+                projectElement.classList.add("box", "tilt", project.category);
+                projectElement.innerHTML = `
+                    <img src="${project.image}" alt="${project.name}" />
+                    <div class="content">
+                        <div class="tag">
+                            <h3>${project.name}</h3>
+                        </div>
+                        <div class="desc">
+                            <p>${project.description}</p>
+                            <div class="btns">
+                                <a href="${project.live}" class="btn" target="_blank">
+                                    <i class="fas fa-eye"></i> Ver Projeto
+                                </a>
+                                <a href="${project.code}" class="btn" target="_blank">
+                                    Código <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                projectsContainer.appendChild(projectElement);
+            });
+        } catch (error) {
+            console.error("Erro ao carregar os projetos:", error);
+        }
+    }
+
+    loadProjects();
+</script>
+
 
 </section>
 <!-- work project section ends -->
 
 <!-- scroll top btn -->
-<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="" class="fas fa-angle-up" id="scroll-top"></a>
 <!-- scroll back to top -->
 
 
