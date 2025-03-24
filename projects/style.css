@@ -21,7 +21,7 @@ body{
 }
 
 *::selection{
-  background: #2b3dda;
+  background: #2ec733;
   color: #fff;
 }
 
@@ -33,10 +33,10 @@ html::-webkit-scrollbar{
   width: .8rem;
 }
 html::-webkit-scrollbar-track{
-  background: rgb(235, 202, 245);
+  background: rgb(202, 235, 202);
 }
 html::-webkit-scrollbar-thumb{
-  background: #420177;
+  background: #066b04;
 }
 
 /* navbar starts */
@@ -50,7 +50,7 @@ header{
   padding: 1.7rem 10%;
   height: 6.5rem;
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146,161,176,.3);
+  box-shadow: 0 1px 4px rgba(146, 176, 146, 0.3);
 }
 section{
   min-height: 100vh;
@@ -63,19 +63,19 @@ section{
   text-align: center;
 }
 .heading span{
-  color: rgb(115, 3, 167);
+  color: rgb(3, 115, 67);
 }
 header .logo{
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0E2431;
+  color: #0b2e0e;
 }
 header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: #09ed09;
 }
 header .navbar ul{
   list-style: none;
@@ -88,15 +88,15 @@ header .navbar li{
 }
 header .navbar ul li a{
   font-size: 1.57rem;
-  color: #0E2431;
+  color: #0b2e0d;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover{
-  color: #011aff;
-  border-bottom: .2rem solid #011aff;
+  color: #02e825;
+  border-bottom: .2rem solid #02d91b;
   padding: .5rem 0;
 }
 /* navbar ends */
@@ -119,7 +119,7 @@ header .navbar ul li a:hover{
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #0c330e;
   }
   header .navbar ul{
     flex-flow: column;
@@ -144,7 +144,7 @@ header .navbar ul li a:hover{
     padding: 1rem;
     color: #fff;
     border-radius: .5rem;
-    border-bottom: .5rem solid #011aff;
+    border-bottom: .5rem solid #04b825;
   }
   .fa-times{
     transform: rotate(180deg);
@@ -158,7 +158,7 @@ header .navbar ul li a:hover{
 /* work section starts */
 .work{
   /* background: #010124; */
-  background: linear-gradient(to bottom, #010136, #00003a);
+  background: linear-gradient(to bottom, #033309, #012e09);
   margin-top: 5rem;
 }
 .work h2{
@@ -218,10 +218,10 @@ header .navbar ul li a:hover{
 }
 .work .box-container .box .content{
   height: 100%;
-  width:100%;
+  width: 100%;
   position: absolute;
-  top:85%; left:0;
-  background:rgba(255, 255, 255, 0.9);
+  top: 85%; left:0;
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
 }
@@ -233,7 +233,7 @@ header .navbar ul li a:hover{
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: #02e333;
 }
 .work .box-container .box .content .tag h3{
   font-size: 2rem;
@@ -267,7 +267,7 @@ header .navbar ul li a:hover{
   margin-right: 2rem;
 }
 .work .desc .btns .btn:hover{
-  background: #310ae0f5;
+  background: #027817;
 }
 
 @media screen and (max-width: 450px) {
@@ -278,7 +278,7 @@ header .navbar ul li a:hover{
     margin: 0rem;
   }
   .work .box-container .grid-item .box{
-    width: 95% !important;
+    width: 95%;
   }
 }
 
