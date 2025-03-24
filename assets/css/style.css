@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #e6eff1;
+  background: #b9f0b6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,13 +84,13 @@ section {
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: rgb(3, 167, 75);
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #09260a;
 }
 header .logo i {
   font-size: 2.2rem;
@@ -109,7 +109,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #0b2b0e;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -117,8 +117,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #05ed10;
+  border-bottom: 0.2rem solid #0b2b0e;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -142,7 +142,7 @@ header .navbar ul li a:hover {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #0b260a;
   }
   header .navbar ul {
     flex-flow: column;
@@ -167,7 +167,7 @@ header .navbar ul li a:hover {
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
+    border-bottom: 0.5rem solid #0ff207;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -224,12 +224,12 @@ header .navbar ul li a:hover {
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #024a21;
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #05ed18;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -239,7 +239,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: rgb(8, 148, 8);
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -251,8 +251,8 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  background: #109e0b;
+  box-shadow: 0px 5px 18px rgba(8, 200, 8, 0.6);
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -266,7 +266,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: #03660a;
 }
 .home .btn:hover i {
   transform: translateX(5px);
