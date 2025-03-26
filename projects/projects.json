@@ -27,7 +27,7 @@
         "name": "Mood Coffee",
         "category": "UX",
         "image": "assets/images/mood-coffee.png",
-        "description": "Um site interativo onde seu estado de espírito define a bebida perfeita! Escolha seu humor, receba uma recomendação e veja a cor do fundo mudar com base na psicologia das cores. Tudo isso com respostas do barista virtual e som ambiente.",
+        "description": "Um site interativo onde seu estado de espírito define a bebida perfeita! ",
         "live": "https://mood-coffee-three.vercel.app/",
         "code": "https://github.com/gabycancello/mood-coffee"
     }
