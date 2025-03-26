@@ -25,57 +25,63 @@ document.addEventListener('visibilitychange',
         }
         else {
             document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "");
         }
     });
 
 
-// fetch projects start
-function getProjects() {
-    return fetch("projects.json")
-        .then(response => response.json())
-        .then(data => {
-            return data
-        });
+// Função para carregar os projetos
+async function getProjects() {
+    try {
+        const response = await fetch("projects.json");
+        const projects = await response.json();
+        showProjects(projects);
+    } catch (error) {
+        console.error("Erro ao carregar os projetos:", error);
+    }
 }
-
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
+
     projects.forEach(project => {
         projectsHTML += `
         <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>`
+            <div class="box tilt" style="width: 380px; margin: 1rem">
+                <img draggable="false" src="${project.image}" alt="${project.name}" />
+                <div class="content">
+                    <div class="tag">
+                        <h3>${project.name}</h3>
+                    </div>
+                    <div class="desc">
+                        <p>${project.description}</p>
+                        <div class="btns">
+                            <a href="${project.live}" class="btn" target="_blank">
+                                <i class="fas fa-eye"></i> Ver Projeto
+                            </a>
+                            <a href="${project.code}" class="btn" target="_blank">
+                                Código <i class="fas fa-code"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`;
     });
+
     projectsContainer.innerHTML = projectsHTML;
 
+    // Inicializar Isotope
+    var $grid = $('.box-container').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows'
+    });
 
-// Filtros Isotope (Atualizado)
-var $grid = $('.box-container').isotope({
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows'
-});
-
-$('.button-group').on('click', 'button', function () {
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-});
+    // Filtragem de projetos
+    $('.button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
 }
 
 getProjects().then(data => {
