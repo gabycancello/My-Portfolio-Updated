@@ -9,7 +9,7 @@
     },
     {
         "name": "Gefran Industria",
-        "category": "tecnologia industrial",
+        "category": "tecnologia-industrial",
         "image": "assets/images/projects/Gefran.png",
         "description": "Projeto de gestão industrial",
         "live": "https://gefran-industria-mecanica.vercel.app/",
