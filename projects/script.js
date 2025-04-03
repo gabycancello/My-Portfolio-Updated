@@ -45,8 +45,11 @@ function showProjects(projects) {
     let projectsHTML = "";
 
     projects.forEach(project => {
+        // Substitui espaços e caracteres especiais na categoria para evitar problemas no Isotope
+        let categoryClass = project.category.toLowerCase().replace(/\s+/g, "-");
+
         projectsHTML += `
-        <div class="grid-item ${project.category}">
+        <div class="grid-item ${categoryClass}">
             <div class="box tilt" style="width: 380px; margin: 1rem">
                 <img draggable="false" src="${window.location.origin}/${project.image}" alt="${project.name}" />
                 <div class="content">
@@ -71,7 +74,7 @@ function showProjects(projects) {
 
     projectsContainer.innerHTML = projectsHTML;
 
-    // Inicializa Isotope corretamente após a inserção dos projetos
+    // Inicializa Isotope após os projetos serem inseridos
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
@@ -80,6 +83,8 @@ function showProjects(projects) {
     // Filtragem de projetos ao clicar nos botões
     $('.button-group').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
+
+        console.log("Filtro aplicado:", filterValue);
 
         if (filterValue === "*") {
             $grid.isotope({ filter: '*' });
