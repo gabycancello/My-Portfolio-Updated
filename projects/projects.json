@@ -2,7 +2,7 @@
     {
         "name": "NatSave",
         "category": "sustentabilidade",
-        "image": "assets/images/natsave.png",
+        "image": "../assets/images/natsave.png",
         "description": "Plataforma gamificada para um futuro sustentável.",
         "live": "https://nat-save.vercel.app/",
         "code": "https://github.com/gabycancello/NatSave"
@@ -10,7 +10,7 @@
     {
         "name": "Gefran Industria",
         "category": "tecnologia-industrial",
-        "image": "assets/images/Gefran.png",
+        "image": "../assets/images/Gefran.png",
         "description": "Projeto de gestão industrial",
         "live": "https://gefran-industria-mecanica.vercel.app/",
         "code": "https://github.com/gabycancello/gefran-industria-mecanica"
@@ -26,7 +26,7 @@
     {
         "name": "Mood Coffee",
         "category": "UX",
-        "image": "assets/images/mood-coffee.png",
+        "image": "../assets/images/mood-coffee.png",
         "description": "Um site interativo onde seu estado de espírito define a bebida perfeita! ",
         "live": "https://mood-coffee-three.vercel.app/",
         "code": "https://github.com/gabycancello/mood-coffee"
