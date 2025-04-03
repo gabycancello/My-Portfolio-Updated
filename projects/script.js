@@ -15,19 +15,18 @@ $(document).ready(function () {
             document.querySelector('#scroll-top').classList.remove('active');
         }
     });
+
 });
 
-document.addEventListener('visibilitychange',
-    function () {
-        if (document.visibilityState === "visible") {
-            document.title = "Projects | Portfolio Gabriela Cancello";
-            $("#favicon").attr("href", "");
-        }
-        else {
-            document.title = "Come Back To Portfolio";
-        }
-    });
-
+// Alteração do título ao mudar de aba
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === "visible") {
+        document.title = "Projects | Portfolio Gabriela Cancello";
+        $("#favicon").attr("href", "");
+    } else {
+        document.title = "Come Back To Portfolio";
+    }
+});
 
 // Função para carregar os projetos
 async function getProjects() {
@@ -40,6 +39,7 @@ async function getProjects() {
     }
 }
 
+// Exibição dinâmica dos projetos
 function showProjects(projects) {
     let projectsContainer = document.querySelector(".work .box-container");
     let projectsHTML = "";
@@ -71,25 +71,31 @@ function showProjects(projects) {
 
     projectsContainer.innerHTML = projectsHTML;
 
-    // Inicializar Isotope
+    // Inicializa Isotope corretamente após a inserção dos projetos
     var $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
         layoutMode: 'fitRows'
     });
 
-    // Filtragem de projetos
+    // Filtragem de projetos ao clicar nos botões
     $('.button-group').on('click', 'button', function () {
         var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
+
+        if (filterValue === "*") {
+            $grid.isotope({ filter: '*' });
+        } else {
+            $grid.isotope({ filter: '.' + filterValue });
+        }
+
+        $('.button-group .btn').removeClass('is-checked');
+        $(this).addClass('is-checked');
     });
 }
 
-getProjects().then(data => {
-    showProjects(data);
-})
-// fetch projects end
+// Chama a função para carregar os projetos ao iniciar
+getProjects();
 
-// disable developer mode
+// Bloqueio de Developer Mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
@@ -106,4 +112,4 @@ document.onkeydown = function (e) {
     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
         return false;
     }
-}
+};
