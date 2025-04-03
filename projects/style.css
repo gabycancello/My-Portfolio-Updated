@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  outline: none; 
+  outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  transition: 0.2s linear;
 }
 
 html {
@@ -20,7 +20,7 @@ html {
 
 body {
   background: #f7f7f7;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 *::selection {
@@ -28,29 +28,30 @@ body {
   color: #fff;
 }
 
+/* Scrollbar */
 html::-webkit-scrollbar {
   width: 0.8rem;
 }
-
 html::-webkit-scrollbar-track {
   background: rgb(202, 235, 202);
 }
-
 html::-webkit-scrollbar-thumb {
   background: #066b04;
 }
 
-/* navbar */
+/* Navbar */
 header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 5%;
   height: 6.5rem;
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 1px 4px rgba(146, 176, 146, 0.3);
 }
 
@@ -61,7 +62,6 @@ header .logo {
   display: flex;
   align-items: center;
 }
-
 header .logo i {
   font-size: 2.5rem;
   margin-right: 0.5rem;
@@ -71,14 +71,12 @@ header .navbar {
   display: flex;
   gap: 2rem;
 }
-
 header .navbar a {
   font-size: 1.6rem;
-  color: #0b2e0d;
   font-weight: 600;
+  color: #0b2e0d;
   transition: 0.3s;
 }
-
 header .navbar a:hover,
 header .navbar a.active {
   color: #02e825;
@@ -107,7 +105,7 @@ header .navbar a.active {
     width: 75%;
     height: 100%;
     flex-direction: column;
-    background-color: #0c330e;
+    background: #0c330e;
     align-items: center;
     padding-top: 2rem;
     transition: 0.3s;
@@ -115,11 +113,11 @@ header .navbar a.active {
 
   header .navbar a {
     display: block;
-    padding: 1.5rem;
-    color: #fff;
-    font-size: 2rem;
     width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
     text-align: center;
+    color: #fff;
   }
 
   header .navbar a:hover {
@@ -131,24 +129,24 @@ header .navbar a.active {
   }
 }
 
-/* work section */
+/* Work Section */
 .work {
   background: linear-gradient(to bottom, #033309, #012e09);
   margin-top: 6.5rem;
   padding: 3rem 5%;
+  text-align: center;
 }
 
 .work h2 {
-  color: #fff;
-  text-align: center;
   font-size: 3.5rem;
+  color: #fff;
 }
 
 .work .button-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
+  gap: 1rem;
 }
 
 .work .button-group .btn {
@@ -167,14 +165,14 @@ header .navbar a.active {
   color: #000;
 }
 
-/* Ajuste flexível do grid */
+/* Grid responsivo */
 .work .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 
-.work .box-container .box {
+.work .box {
   border-radius: 5px;
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -182,18 +180,17 @@ header .navbar a.active {
   background: #fff;
 }
 
-.work .box-container .box img {
+.work .box img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.work .box-container .box .content {
+.work .box .content {
   padding: 1.5rem;
 }
 
 .work .desc {
-  text-align: center;
   margin-top: 2rem;
 }
 
@@ -233,7 +230,6 @@ header .navbar a.active {
   background: none;
   color: #fff;
   transition: 0.3s;
-  text-align: center;
   font-weight: 600;
 }
 
@@ -252,9 +248,9 @@ header .navbar a.active {
   background: #ffae00;
   color: rgb(13, 0, 44);
   border-radius: 50%;
-  transition: 0.3s;
   display: none;
   z-index: 1000;
+  transition: 0.3s;
 }
 
 #scroll-top.active {
