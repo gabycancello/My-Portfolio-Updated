@@ -18,7 +18,7 @@
     {
         "name": "Portfolio",
         "category": "portfolio",
-        "image": "projects/projects-screen.png",
+        "image": "projects-screen.png",
         "description": "Meu portfólio pessoal.",
         "live": "https://portfolio-gabrielacancello.vercel.app/",
         "code": "https://github.com/gabycancello/My-Portfolio-Updated"
