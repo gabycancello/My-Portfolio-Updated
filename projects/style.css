@@ -195,6 +195,17 @@ header .navbar a.active {
   margin-top: 2rem;
 }
 
+.work .box .desc {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.work .box:hover .desc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .work .desc p {
   font-size: 1.6rem;
 }
